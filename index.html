@@ -15,32 +15,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-        <script src="https://kit.fontawesome.com/81c04baa73.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/81c04baa73.js" crossorigin="anonymous"></script>
     <style>
         .lato {
             font-family: 'Open Sans', sans-serif;
         }
-        .slide1{
+
+        /* .slide1{
             background-image: url(./images/banner1.png);
             background-blend-mode: overlay;
-        }
+       }*/
     </style>
 
 </head>
 
 <body class="lato">
-    <header>
+    <header class="">
         <!--nav bar-->
         <section>
-           <div></div>
-           <div></div>
-           <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </section>
         <!--banner section-->
         <section class="mx-5 md:mx-20 lg:mx-40 my-10">
             <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full slide1 rounded-lg ">
-                    <img src="./images/banner.png" class="w-full" />
+                <div id="slide1" class="carousel-item relative w-full rounded-lg ">
+                    <img src="./images/banner1.png" class="w-full" />
                     <div class="absolute top-10 lg:left-60 space-y-3 text-center  text-white ">
                         <h3 class="text-2xl md:text-4xl lg:text-5xl font-extrabold">Exotic tastes at your<br>doorstep
                         </h3>
@@ -53,21 +54,21 @@
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
-                    <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                    <img src="/images/banner2.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" class="btn btn-circle">❮</a>
                         <a href="#slide3" class="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
-                    <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                    <img src="./images/banner3.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" class="btn btn-circle">❮</a>
                         <a href="#slide4" class="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full">
-                    <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                    <img src="./images/banner4.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" class="btn btn-circle">❮</a>
                         <a href="#slide1" class="btn btn-circle">❯</a>
@@ -77,35 +78,81 @@
         </section>
 
     </header>
-    <main>
-     <!--Deal of the day section-->
-     <section>
-
-     </section>
+    <main class="container">
+        <!--Deal of the day section-->
+        <section class="space-y-10">
+            <div class="flex flex-col md:flex-row justify-between mx-20">
+                <div class="text-center justify-center md:text-left w-72 md:w-[600px]">
+                    <h3 class="text-2xl md:text-4xl font-extrabold">Deal of the day</h3>
+                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="flex text-center justify-center gap-6">
+                   <div class="">
+                    <h3 class="text-2xl md:text-4xl font-extrabold">29</h3>
+                    <p>Days</p>
+                   </div>
+                    <img class="h-3 mt-3" src="./images/dots.png" alt="">
+                   <div>
+                    <h3 class="text-2xl md:text-4xl font-extrabold">15</h3>
+                    <p>Hours</p>
+                   </div>
+                   <img class="h-3 mt-3" src="./images/dots.png" alt="">
+                   <div>
+                    <h3 class="text-2xl md:text-4xl font-extrabold">25</h3>
+                    <p>Munites</p>
+                   </div>
+                   <img class="h-3 mt-3" src="./images/dots.png" alt="">
+                   <div>
+                    <h3 class="text-2xl md:text-4xl font-extrabold">25</h3>
+                    <p>Munites</p>
+                   </div>
+                </div>
+            </div>
+            <div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/fruit6.png" alt="Shoes" /></figure>
+                    <div class="card-body justify-center">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Apple</p>
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-pink-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-pink-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-pink-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-pink-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-pink-400" />
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
     </main>
     <footer>
-       <section class=" mt-10 space-y-16 h-auto bg-[#121212]">
-        <div class="flex justify-center gap-2 pt-20">
-            <img class="w-8 md:w-10" src="./images/logo.png" alt="">
-            <h3 class="font-bold text-xl md:text-3xl lg:text-4xl text-white">Fruit Burst</h3>
-        </div>
-        <div class="flex justify-center text-white gap-14 sm:flex-wrap">
-            <p>Home</p>
-            <p>About Us</p>
-            <p>Shop</p>
-            <p>All Fruits</p>
-            <p>Support</p>
-            <p>My Account</p>
-        </div>
-        <div class="flex justify-center gap-8 pb-20">
-            <i class=" fa-brands fa-twitter"></i>
-            <i class="text-white fa-brands fa-square-facebook"></i>
-            <img src="./images/youtube.png" alt="">
-            <img src="./images/linkedin.png" alt="">
-            <img src="./images/instagram.png" alt="">
-            <img src="./images/apple.png" alt="">
-        </div>
-       </section>
+        <section class=" mt-10 space-y-16 h-auto bg-[#121212]">
+            <div class="flex justify-center gap-2 pt-20">
+                <img class="w-8 md:w-10" src="./images/logo.png" alt="">
+                <h3 class="font-bold text-xl md:text-3xl lg:text-4xl text-white">Fruit Burst</h3>
+            </div>
+            <div class="flex justify-center text-white gap-14 sm:flex-wrap">
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Shop</p>
+                <p>All Fruits</p>
+                <p>Support</p>
+                <p>My Account</p>
+            </div>
+            <div class="flex justify-center gap-8 pb-20">
+                <i class=" fa-brands fa-twitter"></i>
+                <i class="text-white fa-brands fa-square-facebook"></i>
+                <img src="./images/youtube.png" alt="">
+                <img src="./images/linkedin.png" alt="">
+                <img src="./images/instagram.png" alt="">
+                <img src="./images/apple.png" alt="">
+            </div>
+        </section>
     </footer>
 </body>
 
@@ -113,16 +160,16 @@
 
 
 
- <!-- The button to open modal -->
- <label for="my_modal_6" class="text-pink-500 underline-offset-8">Details</label>
+<!-- The button to open modal -->
+<label for="my_modal_6" class="text-pink-500 underline-offset-8">Details</label>
 
- <!-- Put this part before </body> tag -->
- <input type="checkbox" id="my_modal_6" class="modal-toggle" />
- <div class="modal">
-     <div class="modal-box">
-         <img class="" src="./images/member4.png" alt="">
-         <div class="modal-action justify-center">
-             <label for="my_modal_6" class="btn">Close!</label>
-         </div>
-     </div>
- </div>
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="my_modal_6" class="modal-toggle" />
+<div class="modal">
+    <div class="modal-box">
+        <img class="" src="./images/member4.png" alt="">
+        <div class="modal-action justify-center">
+            <label for="my_modal_6" class="btn">Close!</label>
+        </div>
+    </div>
+</div>
